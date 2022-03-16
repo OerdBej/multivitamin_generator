@@ -148,10 +148,11 @@
 // VitaminC[0].ingredient === "orange" ? console.log("boom") : console.log("no");
 
 //prompt
+// click with place this var 
 const test = "orange"
 
 const VitaminC = [
-  { name: "ORANGE", quantity: 100 },
+  { name: "Orange", quantity: 100 },
   { name: "Kiwi", quantity: 0 },
 ];
 
@@ -164,7 +165,20 @@ console.log(VitaminC[0].quantity);
 
 for (let i = 0; i < VitaminC.length; i++) {
   if (VitaminC[i].name.toLowerCase() === test.toLowerCase()) {
-    console.log(VitaminC[i].quantity);
+    console.log((VitaminC[i].quantity),"Cup");
   } 
   }
 // ["quantity"]
+
+// pseudo code: Challenge #01
+//TODO Create a new array => Copy information from our Database (array) to place it in a new array! 
+
+//* STEP1: Create an empty array to fill in with the info
+let recipeArr = [];
+
+
+
+// pseudo code when we click on apple btn then console.log const apple 
+
+// const apple = "2 Apples "
+// const Orange = "3 Oranges"

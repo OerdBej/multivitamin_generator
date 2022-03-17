@@ -204,7 +204,7 @@ myButton.addEventListener("click", function () {
   // Checking the value of foundFruit to display a specific message in the HTML for each case
   if (foundFruit != undefined) {
     message.innerHTML = `This is your quantity: ${foundFruit.quantity}`;
-    totalAmount.push(foundFruit.quantity);
+    totalAmount.push(foundFruit);
   } else {
     message.innerHTML = `Sorry, we don't have that fruit`;
   }
@@ -213,10 +213,11 @@ myButton.addEventListener("click", function () {
   // let foundFruit = VitaminC.find(
   //   (element) => element.name.toLowerCase() === fruit.toLowerCase()
   // );
-  // If-esle as a ternary:
+  // If-else as a ternary:
   // foundFruit
   //   ? message.innerHTML = `This is your quantity: ${foundFruit.quantity}`
   //   : message.innerHTML = `Sorry, we don't have that fruit`
+  return totalAmount;
 });
 
 
@@ -225,3 +226,4 @@ myButton.addEventListener("click", function () {
 
 // const apple = "2 Apples "
 // const Orange = "3 Oranges"
+console.log(totalAmount);

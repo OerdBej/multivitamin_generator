@@ -149,10 +149,32 @@
 
 //prompt
 // click with place this var 
-const test = "orange"
+// const test = "orange"
+
+// const VitaminC = [
+//   { name: "Orange", quantity: 100 },
+//   { name: "Kiwi", quantity: 0 },
+// ];
+
+// const VitaminA = [
+//   { name: "Carrot", quantity: 0 },
+//   { name: "Sweet potato", quantity: 0 },
+// ];
+
+// console.log(VitaminC[0].quantity);
+
+// for (let i = 0; i < VitaminC.length; i++) {
+//   if (VitaminC[i].name.toLowerCase() === test.toLowerCase()) {
+//     console.log((VitaminC[i].quantity),"Cup");
+//   } 
+//   }
+// ["quantity"]
+
+// pseudo code: Challenge #01
+//TODO Create a new array => Copy information from our Database (array) to place it in a new array! 
 
 const VitaminC = [
-  { name: "Orange", quantity: 100 },
+  { name: "ORANGE", quantity: 100 },
   { name: "Kiwi", quantity: 0 },
 ];
 
@@ -161,20 +183,41 @@ const VitaminA = [
   { name: "Sweet potato", quantity: 0 },
 ];
 
-console.log(VitaminC[0].quantity);
+//* STEP1: Create an empty array to fill in with the info and an empty var to store the user input
+let fruit;
+let totalAmount = [];
 
-for (let i = 0; i < VitaminC.length; i++) {
-  if (VitaminC[i].name.toLowerCase() === test.toLowerCase()) {
-    console.log((VitaminC[i].quantity),"Cup");
-  } 
+// Get the button and the empty p tag (where our message will be displayed) from the HTML
+const myButton = document.getElementById("big-button");
+const message = document.getElementById("text-here");
+
+// Add an event listener to the button, triggering a prompt asking the user for input, if the button is clicked
+myButton.addEventListener("click", function () {
+  fruit = prompt("What fruit do you want? ");
+
+  // The find method looks for a (case-insensitive) match for the user input in the array and stores the whole object as result
+  let foundFruit = VitaminC.find(function (element) {
+    return element.name.toLowerCase() === fruit.toLowerCase();
+  });
+  // If the find method returned no match, it stores "undefined" as its value
+  
+  // Checking the value of foundFruit to display a specific message in the HTML for each case
+  if (foundFruit != undefined) {
+    message.innerHTML = `This is your quantity: ${foundFruit.quantity}`;
+    totalAmount.push(foundFruit.quantity);
+  } else {
+    message.innerHTML = `Sorry, we don't have that fruit`;
   }
-// ["quantity"]
 
-// pseudo code: Challenge #01
-//TODO Create a new array => Copy information from our Database (array) to place it in a new array! 
-
-//* STEP1: Create an empty array to fill in with the info
-let recipeArr = [];
+  // Same as arrow function:
+  // let foundFruit = VitaminC.find(
+  //   (element) => element.name.toLowerCase() === fruit.toLowerCase()
+  // );
+  // If-esle as a ternary:
+  // foundFruit
+  //   ? message.innerHTML = `This is your quantity: ${foundFruit.quantity}`
+  //   : message.innerHTML = `Sorry, we don't have that fruit`
+});
 
 
 

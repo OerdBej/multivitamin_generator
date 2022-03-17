@@ -1,1 +1,1 @@
-## Our first Project for an amazing Multi-Vitamin Gene
+## Our first Project for an amazing Multi-Vitamin Generator

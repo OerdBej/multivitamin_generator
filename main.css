@@ -1,7 +1,4 @@
-/*TODO Color pallet
-//* src: "https://www.colorhunt.co/palettes/rainbow"
-
-//* dominant colors for the page 
+//* dominant colors for the page
 #FF6363
 #FFAB76
 #FFFDA2
@@ -11,28 +8,11 @@
 #212529
 #343a40
 
+**/
 
-/** Tins
-
-/** Shades 
-
-/** spacing system 
-
-
-/* h2{
-    font-weight: bold;
-    }
-     */
-
-button-box {
-  background-color: aqua;
-}
-
-/** PART 1 **/
-
-.main-title {
-}
-
-box-img {
-  vertical-align: middle;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
 }

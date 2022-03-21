@@ -14,5 +14,103 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 10px;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 70vw;
+  height: 100vh;
+  margin-left: 15%;
+  /*margin-bottom: 5%; */
+}
+
+/* ******* FIRST PAGE : WELCOME SECTION *************** */
+/* Classes for the first Page! */
+
+.header-top {
+  width: 100%;
+  height: 10%;
+  /* background: #144682; */
+}
+
+/*Todo: Parent for all the section */
+.section-welcome {
+  /* background-color: rebeccapurple; */
+  background-color: #30d5c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  /* padding-left: 50px;*/
+  padding-bottom: 6rem;
+  gap: 0;
+}
+
+/* .arrow-img {
+  position: relative;
+  display: inline-block;
+} */
+
+/*? Parent for the H1*/
+/* .left-space {
+  width: 10%;
+  background-color: grey;
+} */
+
+.main-title {
+  /* background-color: red; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* (child) h1 inside the main-title */
+.text-input {
+  font-family: "Dosis", sans-serif; /*need to be changed */
+  font-weight: 600;
+  font-size: 4.5rem;
+  letter-spacing: 0.05rem;
+  line-height: 5rem;
+  color: #f1e8e8;
+}
+
+/* .power-on-icon {
+  width: 30%;
+  height: auto;
+  background-color: #e8b9b3;
+  border-radius: 50%;
+} */
+
+/********* Space between  ***********/
+.middle-space {
+  width: 7%;
+  background-color: grey;
+}
+/*? parent for img selector - Div container for the picture, */
+.img-container {
+  width: 50%;
+}
+
+/* (child) img inside the omg-container */
+.pink-juice {
+  width: 100%;
+  height: auto;
+  transform: rotate(-11.09deg);
+}
+
+/* .right-space {
+  width: 10%;
+  background-color: grey;
+} */
+
+.footer-bottom {
+  width: 100%;
+  height: 10rem;
+  /* background: #13456a; */
+}
+
+/*BTN*/

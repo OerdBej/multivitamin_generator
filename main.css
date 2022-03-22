@@ -34,7 +34,7 @@ body {
 
 .header-top {
   width: 100%;
-  height: 5%;
+  height: 8%;
   /* background: #144682; */
 }
 
@@ -99,7 +99,7 @@ body {
 
 /* (child) img inside the omg-container */
 .img-pink-juice {
-  width: 110%;
+  width: 40rem;
   height: auto;
   transform: rotate(-11.09deg);
 }

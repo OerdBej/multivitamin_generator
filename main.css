@@ -77,7 +77,8 @@ body {
   font-size: 4.5rem;
   letter-spacing: 0.05rem;
   line-height: 5rem;
-  color: #f1e8e8;
+  color: rgb(241, 232, 232);
+  
 }
 
 /* .power-on-icon {

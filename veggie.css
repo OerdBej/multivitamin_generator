@@ -24,7 +24,8 @@ body {
 }
 
 .section-veggies {
-  background-color: palevioletred;
+  /* background-color: palevioletred; */
+  background-color: #30d5c6;
 }
 
 .left-space {
@@ -77,21 +78,25 @@ body {
 .img-container {
   display: flex;
   justify-content: center;
-  width: 50%;
+  align-items: ;
+  width: 60%;
+  padding-bottom: 3%;
+  transform: rotate(-11.09deg);
 }
 
 .img-carrot-juice {
-  width: 100%;
+  width: 80%;
+  height: auto;
 }
 
 .options-btns-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 3rem;
 
-  width: 50%;
+  width: 40%;
 }
 
 /* VEGGIES BTNS STARTS HERE*/

@@ -98,8 +98,8 @@ body {
 }
 
 /* (child) img inside the omg-container */
-.pink-juice {
-  width: 100%;
+.img-pink-juice {
+  width: 110%;
   height: auto;
   transform: rotate(-11.09deg);
 }
@@ -124,7 +124,7 @@ body {
 .c-button {
   color: #000;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   padding: 0.9em 1.6em;
   cursor: pointer;

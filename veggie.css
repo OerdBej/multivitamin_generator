@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 70vw;
+  height: 100vh;
+  margin-left: 15%;
+  /*margin-bottom: 5%; */
+}
+
+/* ******* SECOND PAGE : VEGGIE SECTION *************** */
+
+.header-top {
+  width: 100%;
+  height: 8%;
+  /* background: #144682; */
+}
+
+.section-veggies {
+  background-color: palevioletred;
+}
+
+.left-space {
+  width: 10%;
+  background-color: grey;
+}
+
+.main-title {
+  background-color: #30d5c6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.small-title {
+  font-family: "Kumbh Sans";
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+
+  color: #811919;
+}
+.big-title {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 9rem;
+  line-height: 120px;
+
+  color: #811919;
+}
+
+/**-------- NEW SECTION IMAGE & OPTIONS BTNS----------**/
+/*Todo Parents ot the img and options */
+.section-img-and-options {
+  width: 100%;
+  height: 58vh;
+}
+
+.img-container {
+}
+
+.options-container {
+}
+
+.veggie-btns {
+}

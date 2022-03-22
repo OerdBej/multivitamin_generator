@@ -111,8 +111,8 @@ body {
 
 .footer-bottom {
   width: 100%;
-  height: 10rem;
-  /* background: #13456a; */
+  height: 10rem; 
+  background: #13456a; */
 }
 
 /*BTN*/
@@ -187,3 +187,6 @@ body {
 .c-button--gooey:hover .c-button__blobs div {
   transform: scale(1.4) translateY(0) translateZ(0);
 }
+
+
+/*---------------THIRD SECTION/PAGE VEGGIE------------------ */

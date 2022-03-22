@@ -25,9 +25,50 @@
       <div class="left-space"></div>
       <div class="main-title">
         <h1 class="text-input">WELCOME TO YOUR HOMEMADE VITAMIN GENERATOR</h1>
+        <!-- BTN LETS MIX START HERE -->
+        <div class="div-btn">
+          <button class="c-button c-button--gooey">
+            Let's Mix
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+          <svg
+            style="display: block; height: 0; width: 0"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur
+                  result="blur"
+                  stdDeviation="10"
+                  in="SourceGraphic"
+                ></feGaussianBlur>
+                <feColorMatrix
+                  result="goo"
+                  values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                  mode="matrix"
+                  in="blur"
+                ></feColorMatrix>
+                <feBlend in2="goo" in="SourceGraphic"></feBlend>
+              </filter>
+            </defs>
+          </svg>
+        </div>
       </div>
+      <!-- end BTN TEST  -->
       <div class="middle-space"></div>
       <div class="img-container">
+        <!-- <div class="arrow-div">
+          <img
+            class="img-pink-arrow"
+            src="./veg_fruit_icones/pink-arrow.PNG"
+            alt="arrow image"
+          />
+        </div> -->
         <img
           class="pink-juice"
           src="./veg_fruit_icones/Pngtree—fruit juice_630580.png"

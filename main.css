@@ -18,6 +18,22 @@
   box-sizing: border-box;
   font-size: 10px;
 }
+/*! TOGGLING THE DISPLAY WITH THE FRAMES*/
+/*WELCOME SECTION*/
+.frame1 {
+/* display: flex; */
+display: none;
+}
+/*VEGGIE SECTION*/
+.frame2 {
+  display: none;
+
+}
+
+.frame3 {
+  /* display: none; */
+
+}
 
 /* BODY FOR ALL THE PAGES */
 body {
@@ -43,11 +59,12 @@ body {
 /*Todo: Parent for all the section */
 /*! FRAME NR 001*/
 .welcome-section {
-  /*? toggle to display None  */
-  display: none; 
+  /*? toggle to display with another class frame1  */
+  /* display: none;  */
   /* display: flex; */
   /*Adding the height for the First Frame!*/
-  height: 70%;
+  width: 70vw;
+  height: 80%;
 
   /* background-color: rebeccapurple; */
   background-color: #30d5c6;
@@ -55,7 +72,7 @@ body {
   align-items: center;
   width: fit-content;
   /* padding-left: 50px;*/
-  padding-bottom: 6rem;
+  /* padding-bottom: 6rem; */
   gap: 0;
 
 }
@@ -72,16 +89,21 @@ body {
 } */
 
 .welcome-title {
+  
   /* background-color: red; */
-  width: 30%;
-  height: 50%;
-  display: flex; 
-  flex-direction: column;
+
+   display: flex;  
+   flex-direction: column;
   align-items: center;
+
+
 }
 
 /* (child) h1 inside the main-title H1 */
 .text-input {
+  width: 70%;
+;
+  
   font-family: "Dosis", sans-serif; /*need to be changed */
   font-weight: 600;
   font-size: 4.5rem;
@@ -98,12 +120,13 @@ body {
 }
 /*************? PARENT for img selector - Div container for the picture, */
 .img-container {
-  width: 50%;
+
+ 
 }
 
 /* (child) img inside the omg-container */
 .img-pink-juice {
-  width: 40rem;
+  width: 45rem;
   height: auto;
   transform: rotate(-11.09deg);
 }
@@ -343,3 +366,49 @@ body {
   border-radius: 5px;
   text-decoration: none;
 }
+
+/*! CSS FRAME NR 3*/
+
+/*! the display toggle the display is above in the first lines  */
+
+/* Fruit picture */
+
+.img-fruit-juice{
+  
+}
+
+/* fruit btns   */
+
+.fruit-btns {
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 50%;
+    height: 10%;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 24px;
+    font-weight: 100;
+    /* padding: ; */
+    background-color: #c56584;
+    text-shadow: -2px 2px 17px #646464;
+    border: solid #ffffff 2px;
+    text-decoration: none;
+    /* display: inline-block; */
+    /*Text is centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .fruit-btns:hover {
+    background: #eb7f0e;
+    border: solid #f5dabd 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+  }

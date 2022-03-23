@@ -23,9 +23,11 @@ body {
   /* background: #144682; */
 }
 
+/*! 2nd FRAME STARTS HERE*/
 .section-veggies {
   /* background-color: palevioletred; */
   background-color: #30d5c6;
+  /* display: none; */
 }
 
 .left-space {

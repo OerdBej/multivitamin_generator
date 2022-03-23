@@ -21,12 +21,12 @@
 /*! TOGGLING THE DISPLAY WITH THE FRAMES*/
 /*WELCOME SECTION*/
 .frame1 {
-  /* display: none; */
-  display: flex;
+  display: none;
+  /* display: flex; */
 }
 /*VEGGIE SECTION*/
 .frame2 {
-  display: none;
+  /* display: none; */
 
 }
 
@@ -39,9 +39,14 @@
   display: none;
 }
 
+.progress-juice-bar-container {
+  /* display: none; */
+  display: flex;
+}
+
 /* BODY FOR ALL THE PAGES */
 body {
-  
+  z-index: 0;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -490,15 +495,18 @@ height: 80%;
  * Sass/SCSS source: https://goo.gl/UhXKg
  * PSD by Vin Thomas: https://goo.gl/n1M2e
  */
-
+/*?Display property above first lines */
  .progress-juice-bar-container{
+
    width: 70vw;
-   display: flex;
+   /* display: flex; */
    align-items: center;
    justify-content:center;
+   margin-top: 1rem;
  }
 
 .container {
+  z-index: 10;
   /* margin: 60px auto; */
   text-align: center;
   width: 50%;
@@ -579,8 +587,8 @@ height: 80%;
 
 .label {
   display: inline-block;
-  margin: 0 5px 20px;
-  padding: 3px 8px;
+  margin: 0 20px 10px;
+  padding: 3px 20px;
   color: #aaa;
   text-shadow: 0 1px black;
   border-radius: 3px;

@@ -31,8 +31,12 @@ display: none;
 }
 
 .frame3 {
-  /* display: none; */
+  display: none;
 
+}
+
+frame4 {
+  display: none;
 }
 
 /* BODY FOR ALL THE PAGES */
@@ -374,7 +378,12 @@ body {
 /* Fruit picture */
 
 .img-fruit-juice{
-  
+  width: 80%;
+  height: auto;
+}
+.fruit-img-container {
+  /* background-color: red; */
+  /* width: ; */
 }
 
 /* fruit btns   */
@@ -405,6 +414,49 @@ body {
   }
   
   .fruit-btns:hover {
+    background: #eb7f0e;
+    border: solid #f5dabd 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  /*! CSS FRAME Nr 04*/
+
+.vitamin-img-container{
+
+}
+
+.img-vitmain-icons{
+  
+}
+
+  .vitamin-btns {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 50%;
+    height: 10%;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 24px;
+    font-weight: 100;
+    /* padding: ; */
+    background-color: #c56584;
+    text-shadow: -2px 2px 17px #646464;
+    border: solid #ffffff 2px;
+    text-decoration: none;
+    /* display: inline-block; */
+    /*Text is centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .vitamin-btns:hover {
     background: #eb7f0e;
     border: solid #f5dabd 2px;
     -webkit-border-radius: 5px;

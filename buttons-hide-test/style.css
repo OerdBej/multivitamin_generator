@@ -1,0 +1,52 @@
+button {
+    border-radius: 100px;
+    border: solid orange 2px;
+    background-color: white;
+    height: 150px;
+    width: 150px;
+}
+
+body {
+    background-color: pink;
+}
+
+#fruits, #veggies {
+    background-color: aquamarine;
+    height: 30rem;
+    border-radius: 15px;
+    padding: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#orange {
+    background-image: url("images/tangerine.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#pine-picture {
+    border: solid orange 2px;
+    border-radius: 100px;
+    background-color: white;
+}
+
+#text-here {
+    background-color: rgb(241, 221, 131);
+    height: 30rem;
+    border-radius: 15px;
+    padding: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}

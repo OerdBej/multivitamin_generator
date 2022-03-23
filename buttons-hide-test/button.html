@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Vitamin Generator</title>
+</head>
+<body>
+    <!-- fruit display, visible at first, later to hide -->
+    <div id="fruits">
+        <h1>Choose your favorite Fruit</h1>
+        <!-- container for all the buttons, important for querySelectorAll --> 
+        <div class = btn-container>
+            <button class="fruit-button" id="orange">Orange</button>
+            <button class="fruit-button" id="kiwi">Kiwi</button>
+            <button class="fruit-button" id="sweet-potato">Sweet Potato</button>
+            <button class="fruit-button" id="banana">Banana</button>
+            <button class="fruit-button" id="pineapple">Pineapple</button>
+
+            <img src="images/pineapple.png" alt="pineapple" id="pine-picture">
+            
+        </div>
+    </div>
+    <!-- veggies, hidden at first -->
+    <div id="veggies" class="hidden">
+        <h1>Choose your favorite Veggie</h1>
+        <!-- container for all the buttons, important for querySelectorAll --> 
+        <div class = btn-container></div>
+            <button class="veggie-button"id="broccoli">Broccoli</button>
+            <button class="veggie-button" id="spinach">Spinach</button>
+            <button class="veggie-button" id="carrot">Carrot</button>
+            <button class="veggie-button" id="tomato">Tomato</button>
+            <button class="veggie-button" id="kale">Kale</button>
+            <button class="veggie-button" id="celery">Celery</button>
+        </div>
+    </div>
+    <hr>
+    <!-- place for final recipe, lorem is just to check if changing innerHTML works in the JS code -->
+    <p id="text-here" class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique corporis facilis quisquam laudantium minus optio voluptates ullam, in officiis aliquam veniam corrupti. Accusantium vel, excepturi similique libero deserunt laboriosam? Deserunt.</p>
+    <script src="button.js"></script>
+</body>
+</html>

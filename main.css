@@ -19,7 +19,9 @@
   font-size: 10px;
 }
 
+/* BODY FOR ALL THE PAGES */
 body {
+  
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -40,12 +42,15 @@ body {
 
 /*Todo: Parent for all the section */
 /*! FRAME NR 001*/
-.section-welcome {
+.welcome-section {
+  /*? toggle to display None  */
+  display: none; 
+  /* display: flex; */
+  /*Adding the height for the First Frame!*/
+  height: 70%;
+
   /* background-color: rebeccapurple; */
   background-color: #30d5c6;
-  display: flex;
-  /* toggle to display None  */
-  display: none;
   justify-content: center;
   align-items: center;
   width: fit-content;
@@ -60,21 +65,22 @@ body {
   display: inline-block;
 } */
 
-/*? Parent for the H1*/
+/*? Parent for the H1 & BTN MIX*/
 /* .left-space {
   width: 10%;
   background-color: grey;
 } */
 
-.main-title {
+.welcome-title {
   /* background-color: red; */
   width: 30%;
-  display: flex;
+  height: 50%;
+  display: flex; 
   flex-direction: column;
   align-items: center;
 }
 
-/* (child) h1 inside the main-title */
+/* (child) h1 inside the main-title H1 */
 .text-input {
   font-family: "Dosis", sans-serif; /*need to be changed */
   font-weight: 600;
@@ -85,19 +91,12 @@ body {
   
 }
 
-/* .power-on-icon {
-  width: 30%;
-  height: auto;
-  background-color: #e8b9b3;
-  border-radius: 50%;
-} */
-
 /********* Space between  ***********/
 .middle-space {
   width: 7%;
   background-color: grey;
 }
-/*? parent for img selector - Div container for the picture, */
+/*************? PARENT for img selector - Div container for the picture, */
 .img-container {
   width: 50%;
 }
@@ -121,7 +120,7 @@ body {
 }
 
 /*BTN*/
-/* From cssbuttons.io */
+/* From css buttons.io */
 .div-btn {
   width: 200px;
 }
@@ -194,4 +193,153 @@ body {
 }
 
 
-/*---------------THIRD SECTION/PAGE VEGGIE------------------ */
+/*! CCS VEGGIE SECTION ---------------*******************
+
+/*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+} */
+
+/* body {
+  margin: 0;
+  padding: 0;
+}
+  /*
+  background-color: #fff;
+  width: 70vw;
+  height: 100vh;
+  margin-left: 15%;
+  /*margin-bottom: 5%;} */
+
+/* ******* SECOND PAGE : VEGGIE SECTION *************** */
+
+.header-top {
+  width: 100%;
+  height: 8%;
+  /* background: #144682; */
+}
+
+/*! 2nd FRAME STARTS HERE*/
+.veggies-section {
+  /* background-color: palevioletred; */
+  background-color: #30d5c6;
+  /* display: none; */
+  height: 80%;
+}
+
+.left-space {
+  width: 10%;
+  background-color: grey;
+}
+
+.veggie-title {
+  background-color: #30d5c6;
+  width: 100%;
+  height: 20%;
+  display: block;
+  padding-top: 1rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.small-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif; /*need to be changed */
+
+  /* font-family: "Kumbh Sans"; */
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: ;
+  text-align: center;
+  color: #f1e8e8;
+  /* color: #palevioletred; */
+}
+.big-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: ;
+  text-align: center;
+  height: fit-content;
+
+  color: #c56584;
+
+  /*SHADOW TESTS*/
+}
+
+/**-------- NEW SECTION IMAGE & OPTIONS BTNS----------**/
+/*Todo Parents ot the img and options */
+.section-img-and-options {
+  width: 100%;
+  height: 58vh;
+  /*! TRY to understand the crazy layout */
+  display: flex;
+  /* display: none; */
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: ;
+  width: 70%;
+  padding-bottom: 3%;
+  transform: rotate(-11.09deg);
+  /* background-color: red; */
+}
+
+.img-carrot-juice {
+  width: 70%;
+  height: auto;
+}
+
+.options-btns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  height: ;
+  width: 50%;
+  /* background-color: #e55415; */
+}
+
+/* VEGGIES BTNS STARTS HERE*/
+
+.veggie-btns {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  width: 50%;
+  height: 10%;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Tahoma;
+  font-size: 24px;
+  font-weight: 100;
+  /* padding: ; */
+  background-color: #c56584;
+  text-shadow: -2px 2px 17px #646464;
+  border: solid #ffffff 2px;
+  text-decoration: none;
+  /* display: inline-block; */
+  /*Text is centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.veggie-btns:hover {
+  background: #eb7f0e;
+  border: solid #f5dabd 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}

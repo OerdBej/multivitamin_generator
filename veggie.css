@@ -1,19 +1,20 @@
-* {
+/*  {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   padding: 0;
+}
+  /*
   background-color: #fff;
   width: 70vw;
   height: 100vh;
   margin-left: 15%;
-  /*margin-bottom: 5%; */
-}
+  /*margin-bottom: 5%;} */
 
 /* ******* SECOND PAGE : VEGGIE SECTION *************** */
 
@@ -24,10 +25,11 @@ body {
 }
 
 /*! 2nd FRAME STARTS HERE*/
-.section-veggies {
+.veggies-section {
   /* background-color: palevioletred; */
   background-color: #30d5c6;
   /* display: none; */
+  height: 70%;
 }
 
 .left-space {
@@ -35,9 +37,10 @@ body {
   background-color: grey;
 }
 
-.main-title {
+.veggie-title {
   background-color: #30d5c6;
   width: 100%;
+  height: 20%;
   display: block;
   padding-top: 1rem;
   /* display: flex;
@@ -74,7 +77,9 @@ body {
 .section-img-and-options {
   width: 100%;
   height: 58vh;
-  display: flex;
+  /*! TRY to understand the crazy layout */
+  /* display: flex; */
+  display: none;
 }
 
 .img-container {

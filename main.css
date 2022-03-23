@@ -425,11 +425,26 @@ body {
   /*! CSS FRAME Nr 04*/
 
 .vitamin-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
-
+/*PICTURE*/
 .img-vitmain-icons{
-  
+width: 80%;
+height: 80%;
+}
+
+.options-btns-container-vitamin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: ;
+  width: 50%;
+  /* background-color: #e55415; */
 }
 
   .vitamin-btns {

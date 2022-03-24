@@ -61,7 +61,9 @@ All images were collected from free-to-use libraries avaiable on the internet in
 | FreePNG | [https://www.freepngs.com/][PlGh] |
 
 **These website was created at the Full-Stack Developer Remote Bootcamp at the Wild Code School**
+
 **Thanks for visiting us!**
+
 **March / 2022**
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)

@@ -345,6 +345,25 @@ body {
 }
 
 /* VEGGIES BTNS STARTS HERE*/
+.btn-push:active, .btn-push:focus {
+    position: relative;
+    top: 5px;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: All 250ms ease;
+    -moz-transition: All 250ms ease;
+    -o-transition: All 250ms ease;
+    -ms-transition: All 250ms ease;
+    transition: All 250ms ease;
+    /*drop shadow by clicking */
+    filter: drop-shadow(0 0 0.75rem crimson);
+
+}
+
+
 
 .veggie-btns {
   -webkit-border-radius: 5px;
@@ -586,7 +605,8 @@ height: 80%;
  }
 
 .container {
-  z-index: 10;
+  /*?Changed the z index to make the progress bar not clickable*/
+  z-index: -2;
   /* margin: 60px auto; */
   text-align: center;
   width: 50%;
@@ -664,6 +684,11 @@ height: 80%;
 .radio {
   display: none;
 }
+  /* try to make the input not clickble */
+
+
+
+
 
 .label {
   display: inline-block;
@@ -673,6 +698,7 @@ height: 80%;
   text-shadow: 0 1px black;
   border-radius: 3px;
   cursor: pointer;
+
 }
 
 .radio:checked + .label {

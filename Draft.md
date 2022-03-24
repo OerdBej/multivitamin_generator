@@ -302,3 +302,87 @@ https://media.gelbe-liste.de/pictures/strukturformel/calcium-pantothenat.png
 
 iron
 https://upload.wikimedia.org/wikipedia/commons/e/e9/IronPentacarbonylStructure.png
+
+@media only screen and (max-width: 1380px) {
+body {
+background-color: lightblue;
+}
+
+/_ todo:
+Vitamins frame
+todo: title big and small done
+todo: picture decreased 10%
+todo: buttons changed gap and changed width and font size
+todo: progress bar stay like that now
+todo: added media qwarry from Ipad air and Iphone
+todo:
+todo:
+todo:
+todo:
+todo:
+todo: _/
+
+/_ the original css setting for the titles _/
+
+- {
+  font-size: ;
+  }
+
+.veggie-title {
+background-color: #30d5c6;
+width: 100%;
+height: 20%;
+display: block;
+padding-top: 1rem;
+/_ display: flex;
+flex-direction: column;
+align-items: center; _/
+
+}
+.small-title {
+margin: 0;
+padding: 0;
+font-family: "Dosis", sans-serif; /_need to be changed _/
+
+/_ font-family: "Kumbh Sans"; _/
+font-weight: 500;
+/_? media quarry changes _/
+font-size: 2rem;
+/_? media quarry end _/
+letter-spacing: ;
+text-align: center;
+color: #f1e8e8;
+/_ color: #palevioletred; _/
+}
+.big-title {
+margin: 0;
+padding: 0;
+font-family: "Playfair Display";
+font-weight: 600;
+/_? media quarry changes _/
+font-size: 5rem;
+/_? media quarry end _/
+line-height: ;
+text-align: center;
+height: fit-content;
+
+color: #c56584;
+}
+/_PICTURE_/ decreased just 10%
+.img-vitmain-icons{
+width: 70%;
+height: 70%;
+}
+
+.options-btns-container-vitamin {
+gap: 2rem;
+height: ;
+width: 50%;
+/_ background-color: #e55415; _/
+}
+
+.vitamin-btns {
+width: 40%;
+height: 9%;
+
+}

@@ -476,14 +476,6 @@ body {
 }
 
 /* ----------------HOVER PROPERTIES FOR THE VEGGIES BTNS ------using id selectors----------*/
-#apple {
-}
-#pear {
-}
-#pineapple {
-}
-#orange {
-}
 
 #apple:hover,
 #apple:focus {
@@ -572,6 +564,40 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-decoration: none;
+}
+
+/* ----------------HOVER PROPERTIES FOR THE VEGGIES BTNS ------using id selectors----------*/
+
+#C-vitamin:hover,
+#C-vitamin:focus {
+  background-image: url(https://idsb.tmgrup.com.tr/ly/uploads/images/2020/05/13/35552.jpeg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
+}
+
+#Iron:hover,
+#Iron:focus {
+  background-image: url(https://agro-market24.eu/uploads/photos/73338/sprzedam_fruits-fresh-pear-_agromarket24_ceny%20rolnicze-480279-73338.jpeg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
+}
+
+#A-vitamin:hover,
+#A-vitaminple:focus {
+  background-image: url(https://cdn.pixabay.com/photo/2016/01/10/21/06/eye-1132531__480.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
+}
+
+#calcium:hover,
+#calcium:focus {
+  background-image: url(https://scitechdaily.com/images/Bone-Structure.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
 }
 
 /*! CSS for FRAME Nr. 05  starts here */

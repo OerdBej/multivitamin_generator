@@ -608,8 +608,9 @@ body {
   /* background-color: #c56584; */
   background-color: #f3e0e6;
   background-image: url("./veg_fruit_icones/yellow-splash.png");
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /*? Just Parents TITLE and Text */

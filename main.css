@@ -740,7 +740,13 @@ body {
   bottom: 12%;
 }
 
+/*! conflict spot*/
 #js-vitamin-veggie {
+}
+/* #js-vitamin-extra {
+  position: absolute;
+  bottom: 1%;
+
   left: 10%;
 }
 
@@ -748,8 +754,12 @@ body {
   left: 44%;
 }
 
-#ja-vitamin-extra {
-  right: 10%;
+#js-vitamin-extra {
+  color: #ffffff;
+  font-family: Tahoma;
+  font-size: 5rem;
+  font-weight: 100;
+  text-align: center;
 }
 
 /*? CSS Frame Nr.05 finish here */

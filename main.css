@@ -732,20 +732,31 @@ body {
 #js-vitamin-fruit,
 #js-vitamin-extra {
   margin: 0;
+  width: 15%;
   position: absolute;
-  color: #f1e8e8;
+  color: rgb(241, 232, 232);
   font-family: Tahoma;
-  font-size: 4rem;
+  font-size: 1.4rem;
+  text-align: center;
   font-weight: 100;
-  bottom: 12%;
+  bottom: 40%;
+  padding-left: ;
+  padding-right: ;
+  text-shadow: 2px 5px 10px #74745d;
 }
 
 /*? Positions*/
 #js-vitamin-veggie {
+  left: 7%;
+  top: 35%;
 }
 #js-vitamin-fruit {
+  left: 40%;
+  top: 35%;
 }
 #js-vitamin-extra {
+  right: 10%;
+  top: 35%;
 }
 
 /*? CSS Frame Nr.05 finish here */

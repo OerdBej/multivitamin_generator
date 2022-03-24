@@ -3,42 +3,42 @@ const ingredientInfo = [
   {
     name: "Orange",
     quantity: "1 piece",
-    vitamin: "C",
+    vitamin: "vitamin C",
   },
   {
     name: "Apple",
     quantity: "1 piece",
-    vitamin: "C",
+    vitamin: "vitamin C",
   },
   {
     name: "Pear",
     quantity: "1 piece",
-    vitamin: "C",
+    vitamin: "vitamin C",
   },
   {
     name: "Pineapple",
     quantity: "2 cups",
-    vitamin: "C",
+    vitamin: "vitamin C",
   },
   {
     name: "Carrot",
     quantity: "2 pieces",
-    vitamin: "A",
+    vitamin: "vitamin A",
   },
   {
     name: "Celery",
     quantity: "4 ribs",
-    vitamin: "K",
+    vitamin: "vitamin K",
   },
   {
     name: "Beet",
     quantity: "1 piece",
-    vitamin: "Fi",
+    vitamin: "Iron",
   },
   {
     name: "Cucumber",
     quantity: "1 piece",
-    vitamin: "K",
+    vitamin: "vitamin K",
   },
   // {
   //   name: "Kiwi",
@@ -53,22 +53,22 @@ const ingredientInfo = [
   {
     name: "Kale",
     quantity: "1 cup",
-    vitamin: "Ca",
+    vitamin: "Calcium",
   },
   {
     name: "Spinach",
     quantity: "1 cup",
-    vitamin: "Fe",
+    vitamin: "Iron",
   },
   {
     name: "Pumpkin",
     quantity: "1 quarter",
-    vitamin: "A",
+    vitamin: "vitamin A",
   },
   {
     name: "Papaya",
     quantity: "1 cup",
-    vitamin: "C",
+    vitamin: "vitamin C",
   },
 ];
 
@@ -82,17 +82,20 @@ function switchDisplay(toHide, toDisplay, progBarMove) {
 
 // Function to get the object data corresponding to the button clicked by the user
 function getIngredient(element) {
-  ingredientInfo.forEach(function(ingredient) {
-    if (ingredient.name === element.innerHTML || ingredient.vitamin === element.value) {
+  ingredientInfo.forEach(function (ingredient) {
+    if (
+      ingredient.name === element.innerHTML ||
+      ingredient.vitamin === element.value
+    ) {
       finalArray.push(ingredient);
     }
-  })
+  });
 }
 
 // Function to delay executing the next step, needs to be called with "async function()" and "await"
 // Source: https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // !* Vars for sections/frames & progress bar
@@ -115,60 +118,59 @@ let finalArray = [];
 // !* User interaction
 // Step 1: Clicking the "Lets Mix" button on the landing page moves to veggies frame
 let letsMix = document.querySelector(".lets-mix");
-letsMix.addEventListener("click", function() {
+letsMix.addEventListener("click", function () {
   welcomeSection.style.display = "none";
   veggieSection.classList.toggle("hidden");
   progBar25.checked = true;
-}) 
+});
 
 // Step2: Choosing a veggie button will lead the user to fruits frame
 let veggieButtons = document.querySelectorAll(".veggie-btns");
-veggieButtons.forEach(function(element) {
-  element.addEventListener("click", async function() {
+veggieButtons.forEach(function (element) {
+  element.addEventListener("click", async function () {
     getIngredient(element);
     console.log(finalArray);
     await sleep(750);
     switchDisplay(veggieSection, fruitSection, progBar50);
-  })
-})
+  });
+});
 
 // Step 3: Choosing a fruit button will lead the user to vitamins frame
 let fruitButtons = document.querySelectorAll(".fruit-btns");
-fruitButtons.forEach(function(element) {
-  element.addEventListener("click", async function() {
+fruitButtons.forEach(function (element) {
+  element.addEventListener("click", async function () {
     getIngredient(element);
     console.log(finalArray);
     await sleep(750);
     switchDisplay(fruitSection, vitaminSection, progBar75);
-  })
-})
+  });
+});
 
 // Step 4: Choosing a vitamin will lead the user to the final recipe
 let vitaminButtons = document.querySelectorAll(".vitamin-btns");
-vitaminButtons.forEach(function(element) {
-  element.addEventListener("click", async function() {
+vitaminButtons.forEach(function (element) {
+  element.addEventListener("click", async function () {
     getIngredient(element);
     console.log(finalArray);
     await sleep(750);
     switchDisplay(vitaminSection, recipeSection, progBar100);
 
-  let veggieItem = document.getElementById("js-veggie-item");
-  veggieItem.innerHTML = `${finalArray[0].quantity} of ${finalArray[0].name}`;
-  let fruitItem = document.getElementById("js-fruit-item");
-  fruitItem.innerHTML = `${finalArray[1].quantity} of ${finalArray[1].name}`;
-  let vitaminItem = document.getElementById("js-vitamin-item");
-  vitaminItem.innerHTML = `${finalArray[2].quantity} of ${finalArray[2].name}`;
+    let veggieItem = document.getElementById("js-veggie-item");
+    veggieItem.innerHTML = `${finalArray[0].quantity} of ${finalArray[0].name}`;
+    let fruitItem = document.getElementById("js-fruit-item");
+    fruitItem.innerHTML = `${finalArray[1].quantity} of ${finalArray[1].name}`;
+    let vitaminItem = document.getElementById("js-vitamin-item");
+    vitaminItem.innerHTML = `${finalArray[2].quantity} of ${finalArray[2].name}`;
 
-  // Filling the vitamin bubbles with the dominant vitamins from the user's selection
-  let vitaminVeggie = document.getElementById("js-vitamin-veggie");
-  vitaminVeggie.innerHTML = `${finalArray[0].vitamin}`;
-  let vitaminFruit = document.getElementById("js-vitamin-fruit");
-  vitaminFruit.innerHTML = `${finalArray[1].vitamin}`;
-  let vitaminExtra = document.getElementById("js-vitamin-extra");
-  vitaminExtra.innerHTML = `${finalArray[2].vitamin}`;
-  })
-})
-
+    // Filling the vitamin bubbles with the dominant vitamins from the user's selection
+    let vitaminVeggie = document.getElementById("js-vitamin-veggie");
+    vitaminVeggie.innerHTML = `${finalArray[0].vitamin}`;
+    let vitaminFruit = document.getElementById("js-vitamin-fruit");
+    vitaminFruit.innerHTML = `${finalArray[1].vitamin}`;
+    let vitaminExtra = document.getElementById("js-vitamin-extra");
+    vitaminExtra.innerHTML = `${finalArray[2].vitamin}`;
+  });
+});
 
 // ANIMATED BTN
 

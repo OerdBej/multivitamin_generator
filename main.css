@@ -31,12 +31,12 @@
 }
 /* FRUIT SECTION*/
 .frame3 {
-  /* display: none; */
+  display: none;
 
 }
 
 .frame4 {
-  display: none;
+  /* display: none; */
 }
 
 .progress-juice-bar-container {

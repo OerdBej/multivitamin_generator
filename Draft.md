@@ -294,3 +294,11 @@ https://www.gardeningknowhow.com/wp-content/uploads/2021/08/Orange-fruits.jpg
 
 Vitamin A
 https://media1.faz.net/ppmedia/aktuell/298872796/1.1643593/default-retina/strukturformel-von-tocopherol.jpg
+
+Vitamin C
+
+calcium
+https://media.gelbe-liste.de/pictures/strukturformel/calcium-pantothenat.png
+
+iron
+https://upload.wikimedia.org/wikipedia/commons/e/e9/IronPentacarbonylStructure.png

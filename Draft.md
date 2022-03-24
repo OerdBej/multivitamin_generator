@@ -269,6 +269,37 @@ textContainer.innerHTML = `Your favorite fruit and veggie: ${finalArray}`;
 
 // <-- !* MORAN'S CODE FOR SEARCHING AN OBJECT WITH OBJECTS -->
 
+const ingredientInfoLookup = {
+  orange: {
+    prettyName: "Orange",
+    quantity: "1 piece",
+    vitamin: "C",
+  },
+  apple: {
+    prettyName: "Apple",
+    quantity: "1 piece",
+    vitamin: "C",
+  },
+  carrot: {
+    prettyName: "Carrot",
+    quantity: "1 piece",
+    vitamin: "C",
+  },
+  ginger: {
+    prettyName: "Ginger",
+    quantity: "1 piece",
+    vitamin: "C",
+  },
+  kiwi: {
+    quantity: "3 pieces",
+    vitamin: "C",
+  },
+  vitaminC: {
+    prettyName: "Tomato",
+    quantity: "3 pieces",
+  },
+};
+
 // const ingredientList = [
 //   "apple",
 //   "kiwi",

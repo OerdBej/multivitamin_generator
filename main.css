@@ -658,27 +658,27 @@ height: 80%;
 
 #five:checked ~ .progress > .progress-bar {
   width: 5%;
-  background-color: #f63a0f;
+  background-color: #ed3f21;
 }
 
 #twentyfive:checked ~ .progress > .progress-bar {
   width: 25%;
-  background-color: #f27011;
+  background-color: #ed9121;
 }
 
 #fifty:checked ~ .progress > .progress-bar {
   width: 50%;
-  background-color: #f2b01e;
+  background-color: #e7b620;
 }
 
 #seventyfive:checked ~ .progress > .progress-bar {
   width: 75%;
-  background-color: #f2d31b;
+  background-color: #ecc54e;
 }
 
 #onehundred:checked ~ .progress > .progress-bar {
   width: 100%;
-  background-color: #86e01e;
+  background-color: #21ed91;
 }
 
 .radio {

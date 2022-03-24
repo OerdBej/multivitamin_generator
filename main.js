@@ -11,23 +11,68 @@ const ingredientInfo = [
     vitamin: "C",
   },
   {
+    name: "Pear",
+    quantity: "1 piece",
+    vitamin: "C",
+  },
+  {
+    name: "Pineapple",
+    quantity: "1 piece",
+    vitamin: "C",
+  },
+  {
     name: "Carrot",
     quantity: "1 piece",
     vitamin: "C",
   },
   {
-    name: "Ginger",
+    name: "Celery",
     quantity: "1 piece",
     vitamin: "C",
   },
   {
-    name: "Kiwi",
-    quantity: "3 pieces",
+    name: "Beet",
+    quantity: "1 piece",
     vitamin: "C",
   },
   {
-    name: "Tomato",
-    quantity: "3 pieces",
+    name: "Cucumber",
+    quantity: "1 piece",
+    vitamin: "C",
+  },
+  // {
+  //   name: "Ginger",
+  //   quantity: "1 piece",
+  //   vitamin: "C",
+  // },
+  // {
+  //   name: "Kiwi",
+  //   quantity: "3 pieces",
+  //   vitamin: "C",
+  // },
+  // {
+  //   name: "Tomato",
+  //   quantity: "3 pieces",
+  //   vitamin: "C",
+  // },
+  {
+    name: "Calcium",
+    quantity: "1 piece",
+    vitamin: "Calcium",
+  },
+  {
+    name: "Iron",
+    quantity: "1 piece",
+    vitamin: "Iron",
+  },
+  {
+    name: "Vitamin A",
+    quantity: "1 piece",
+    vitamin: "A",
+  },
+  {
+    name: "Vitamin C",
+    quantity: "1 piece",
     vitamin: "C",
   },
 ];
@@ -65,7 +110,6 @@ let vitaminSection = document.querySelector(".vitamins-section");
 // setting variables for all steps of the progress bar
 let progBar25 = document.getElementById("twentyfive");
 let progBar50 = document.getElementById("fifty");
-// Making progBar clickable will have issues with hide&display, save for later...
 let progBar75 = document.getElementById("seventyfive");
 let progBar100 = document.getElementById("onehundred");
 
@@ -78,7 +122,7 @@ let letsMix = document.querySelector(".lets-mix");
 letsMix.addEventListener("click", function() {
   welcomeSection.style.display = "none";
   veggieSection.classList.toggle("hidden");
-  progBar50.checked = true;
+  progBar25.checked = true;
 }) 
 
 // Step2: Choosing a veggie button will lead the user to fruits frame
@@ -88,7 +132,7 @@ veggieButtons.forEach(function(element) {
     getIngredient(element);
     console.log(finalArray);
     await sleep(750);
-    switchDisplay(veggieSection, fruitSection, progBar75);
+    switchDisplay(veggieSection, fruitSection, progBar50);
   })
 })
 
@@ -99,11 +143,11 @@ fruitButtons.forEach(function(element) {
     getIngredient(element);
     console.log(finalArray);
     await sleep(750);
-    switchDisplay(fruitSection, vitaminSection, progBar100);
+    switchDisplay(fruitSection, vitaminSection, progBar75);
   })
 })
 
-// Step 4: Choosing a vitamin will show the user the final recipe
+// Step 4: Choosing a vitamin will lead the user to the final recipe
 let vitaminButtons = document.querySelectorAll(".vitamin-btns");
 vitaminButtons.forEach(function(element) {
   element.addEventListener("click", async function() {

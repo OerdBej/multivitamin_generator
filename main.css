@@ -679,7 +679,7 @@ body {
 
 /*TODO: UL items for JS Team*/
 /* #recipe-list-items{} */
-/* LI READY for teh JS Team*/
+/* LI READY for the JS Team*/
 #js-veggie-item {
 }
 #js-fruit-item {
@@ -730,36 +730,22 @@ body {
 /* P Element Vitamin Letter*/
 #js-vitamin-veggie,
 #js-vitamin-fruit,
-#ja-vitamin-extra {
+#js-vitamin-extra {
   margin: 0;
   position: absolute;
   color: #f1e8e8;
   font-family: Tahoma;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 100;
   bottom: 12%;
 }
 
-/*! conflict spot*/
+/*? Positions*/
 #js-vitamin-veggie {
 }
-/* #js-vitamin-extra {
-  position: absolute;
-  bottom: 1%;
-
-  left: 10%;
-}
-
 #js-vitamin-fruit {
-  left: 44%;
 }
-
 #js-vitamin-extra {
-  color: #ffffff;
-  font-family: Tahoma;
-  font-size: 5rem;
-  font-weight: 100;
-  text-align: center;
 }
 
 /*? CSS Frame Nr.05 finish here */

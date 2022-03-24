@@ -53,7 +53,38 @@ Our project uses a number of open source projects to work properly:
 - Oerd Bej [https://github.com/OerdBej]
 - Jessica Povoa [www.lembra.tv]
 
-## Sources
+## Sources and inspirations
+
+- Progress bar
+https://codepen.io/Thibaut/pen/ApjaJW
+
+- Mix it button
+https://cssbuttons.io/detail/cssbuttons-io/nice-walrus-6
+
+- Click push effect in the option buttons
+https://codepen.io/cssjockey/pen/bGbmop
+
+- Tints and shades website
+https://maketintsandshades.com/#c56584
+
+- Inspiration for the color palettes
+https://colorhunt.co/
+
+- Animated Progress Bar
+https://codepen.io/Thibaut/pen/ApjaJW
+
+- CSS buttons, checkboxes, and more!
+https://cssbuttons.io/detail/cssbuttons-io/nice-walrus-6
+
+- CodePenCodePen
+https://codepen.io/cssjockey/pen/bGbmop
+
+- shades
+https://maketintsandshades.com/#c56584
+
+- color
+https://colorhunt.co/
+
 
 All images were collected from free-to-use libraries avaiable on the internet including these websites:
 

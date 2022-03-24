@@ -224,11 +224,11 @@
 
 <!-- *! JS Code for using .toggle() to display & hide divs after clicking a button -->
 
-// Function to add CSS class "hidden" to an HTML-element and remove the same class if it is already there from the start, so hidden stuff is now displayed 
+// Function to add CSS class "hidden" to an HTML-element and remove the same class if it is already there from the start, so hidden stuff is now displayed
 
 function switchDisplay(toHide, toDisplay) {
-    toHide.classList.toggle("hidden");
-    toDisplay.classList.toggle("hidden");
+toHide.classList.toggle("hidden");
+toDisplay.classList.toggle("hidden");
 }
 
 const fruitContainer = document.getElementById("fruits");
@@ -239,28 +239,58 @@ let finalArray = [];
 const fruitButtons = document.querySelectorAll(".fruit-button")
 // MUST addEventListener to each element with "forEach", adding the Listener to the variable fruitButtons as a whole doesn't work!
 fruitButtons.forEach(function (element) {
-    element.addEventListener("click", function() {
-        // Below also works with (element.innerHTML) and (element.value) if value is specified like id/class
-        switchDisplay(fruitContainer, veggieContainer);
-        finalArray.push(element.innerHTML);
-        
+element.addEventListener("click", function() {
+// Below also works with (element.innerHTML) and (element.value) if value is specified like id/class
+switchDisplay(fruitContainer, veggieContainer);
+finalArray.push(element.innerHTML);
+
         console.log(`finalArray is now: ${finalArray} with ${finalArray.length} elements`);
     })
+
 })
 
 const veggieButtons = document.querySelectorAll(".veggie-button")
 veggieButtons.forEach(function (element) {
-    element.addEventListener("click", function() {
-        // Below also works with (element.value) if value is specified like id/class
-        switchDisplay(veggieContainer, textContainer);
-        finalArray.push(element.innerHTML);
+element.addEventListener("click", function() {
+// Below also works with (element.value) if value is specified like id/class
+switchDisplay(veggieContainer, textContainer);
+finalArray.push(element.innerHTML);
 
         console.log(`finalArray is now: ${finalArray} with ${finalArray.length} elements`);
     })
+
 })
 
 console.log(finalArray);
 textContainer.innerHTML = `Your favorite fruit and veggie: ${finalArray}`;
 // PROBLEM: above line displays nothing at all.
-// textContainer.innerHTML = finalArray[0] displays undefined... 
+// textContainer.innerHTML = finalArray[0] displays undefined...
 // "return finalArray" in both eventListener functions does not solve the issue.
+
+\***\*\*\*\*\*\*\*** CSS IMAGES FOR THE BACKGROUND
+carrot
+https://foodandnutrition.org/wp-content/uploads/Savor-Carrots.jpg
+
+celery
+https://static.onecms.io/wp-content/uploads/sites/44/2021/12/07/is-celery-good-for-you-heres-what-an-rd-says.jpg
+
+beets
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNKkvFa9cmNPh6kjznRGmZHx9wSIPM_qyvNA&usqp=CAU
+
+cucamber
+https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cucumber-slice-royalty-free-image-153556336-1562870568.jpg
+
+Apple
+https://idsb.tmgrup.com.tr/ly/uploads/images/2020/05/13/35552.jpeg
+
+pear
+https://agro-market24.eu/uploads/photos/73338/sprzedam_fruits-fresh-pear-_agromarket24_ceny%20rolnicze-480279-73338.jpeg
+
+pineapple
+https://aijn.eu/files/attachments/.116/wl1200hp1200q85_shutterstock_164089904.jpg
+
+orange
+https://www.gardeningknowhow.com/wp-content/uploads/2021/08/Orange-fruits.jpg
+
+Vitamin A
+https://media1.faz.net/ppmedia/aktuell/298872796/1.1643593/default-retina/strukturformel-von-tocopherol.jpg

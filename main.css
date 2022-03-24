@@ -26,12 +26,12 @@
 }
 /*VEGGIE SECTION*/
 .frame2 {
-  /* display: none; */
+  display: none;
 
 }
-
+/* FRUIT SECTION*/
 .frame3 {
-  display: none;
+  /* display: none; */
 
 }
 
@@ -368,13 +368,58 @@ body {
 }
 
 .veggie-btns:hover {
-  background: #eb7f0e;
+  /* background: #eb7f0e; */
+  
   border: solid #f5dabd 2px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-decoration: none;
+
 }
+/* ----------------HOVER PROPERTIES FOR THE VEGGIES BTNS ------using id selectors----------*/ 
+
+#carrot:hover{
+  background-image: url(https://media.healthyfood.com/wp-content/uploads/2019/07/The-lost-plot-growing-carrots-iStock-471680420.jpg  );
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
+}
+
+#celery:hover{
+  background-image: url(https://static.onecms.io/wp-content/uploads/sites/44/2021/12/07/is-celery-good-for-you-heres-what-an-rd-says.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
+}
+
+#beet:hover{
+  background-image: url(https://www.culturesforhealth.com/learn/wp-content/uploads/2016/06/Naturally-Cultured-Beets_header-1200x900.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
+  
+}
+
+#cucumber:hover{
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cucumber-slice-royalty-free-image-153556336-1562870568.jpg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: 100%;
+}
+
+/*? TEST to change the hover to a picture using img-background*/
+/* carrot
+https://foodandnutrition.org/wp-content/uploads/Savor-Carrots.jpg
+
+celery
+https://static.onecms.io/wp-content/uploads/sites/44/2021/12/07/is-celery-good-for-you-heres-what-an-rd-says.jpg
+
+beets
+https://www.thespruceeats.com/thmb/Uhks1NYyLACa_24_bI7jyGGdq_w=/3744x3744/smart/filters:no_upscale()/beets-182175899-5888a9fa3df78c2ccd9146c3.jpg
+
+cucumber
+https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cucumber-slice-royalty-free-image-153556336-1562870568.jpg */
 
 /*! CSS FRAME NR 3*/
 
@@ -426,6 +471,52 @@ body {
     border-radius: 5px;
     text-decoration: none;
   }
+
+  /* ----------------HOVER PROPERTIES FOR THE VEGGIES BTNS ------using id selectors----------*/ 
+  #apple{
+
+  }
+  #pear{
+
+  }
+  #pineapple{
+
+  }
+  #orange{
+
+  }
+
+
+  #apple:hover{
+    background-image: url(https://idsb.tmgrup.com.tr/ly/uploads/images/2020/05/13/35552.jpeg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 100%;
+  }
+  
+  #pear:hover{
+    background-image: url(https://agro-market24.eu/uploads/photos/73338/sprzedam_fruits-fresh-pear-_agromarket24_ceny%20rolnicze-480279-73338.jpeg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 100%;
+  }
+  
+  #pineapple:hover{
+    background-image: url(https://aijn.eu/files/attachments/.116/wl1200hp1200q85_shutterstock_164089904.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 100%;
+    
+  }
+  
+  #orange:hover{
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cucumber-slice-royalty-free-image-153556336-1562870568.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 100%;
+  }
+  
+
 
   /*! CSS FRAME Nr 04*/
 

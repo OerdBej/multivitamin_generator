@@ -1,6 +1,6 @@
 
 # MULTI-VITAMIN Generator
-## Our first Project for the ultimate
+## Our first Project for the ultimate Vitamin Generator
 
 ![vitamin](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdpBTx1miRbu1Pr9UnuqfRZYAieNxdsqzRA&usqp=CAU)
 
@@ -20,17 +20,17 @@ Tailored made, it is an efficient way for you to substitute all vitamins pills y
 - The first page is the introduction, when you click the button, it changes the page and shows the questions
 - In the second page, you can choose one ingredient out of the fruits
 - You can see the progress in the bar at the bottom of the page
-- In the third page you can choose your favorite veggie to add to your smoothie
+- In the third page you can choose your favorite veggie to add to your juice
 - The fourth page, asks you to add one extra vitamin according to your needs
 - With all this, we will generate an extra fruit or veggie to make sure you get all vitamins needed
-- The last page will show you the perfect recipe for a delicious and balanced smoothie
+- The last page will show you the perfect recipe for a delicious and balanced drink!
 
 
 > Our project will inovate 
-> with the best technology avaiable on the internet
+> with the best technology available on the internet
 > to improve the quality of your meals
 > and add efficiency to your 
-> daily intake of the vitamins
+> daily intake of all vitamins
 > needed to make the best 
 > of your body and your life!
 
@@ -42,7 +42,6 @@ Our project uses a number of open source projects to work properly:
 - [CSS]
 - [JavaScript]
 - [VisualCodeStudio]
-- [jQuery]
 - [Github]
 - [markdown-it]
 - [Netfly]
@@ -51,7 +50,7 @@ Our project uses a number of open source projects to work properly:
 
 - Moran Thaler [https://github.com/thalermo]
 - Arne Rief [https://github.com/Arrief]
-- Oerd Bej []
+- Oerd Bej [https://github.com/OerdBej]
 - Jessica Povoa [www.lembra.tv]
 
 ## Sources

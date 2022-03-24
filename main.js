@@ -1,41 +1,83 @@
 //TODO second database structure
-const ingredientInfoLookup = {
-  orange: {
-    prettyName: "Orange",
+const ingredientInfoLookup = [
+  {
+    name: "Orange",
     quantity: "1 piece",
     vitamin: "C",
   },
-  apple: {
-    prettyName: "Apple",
+  {
+    name: "Apple",
     quantity: "1 piece",
     vitamin: "C",
   },
-  carrot: {
-    prettyName: "Carrot",
+  {
+    name: "Carrot",
     quantity: "1 piece",
     vitamin: "C",
   },
-  ginger: {
-    prettyName: "Ginger",
+  {
+    name: "Ginger",
     quantity: "1 piece",
     vitamin: "C",
   },
-  kiwi: {
+  {
+    name: "Kiwi",
     quantity: "3 pieces",
     vitamin: "C",
   },
-  vitaminC: {
-    prettyName: "Tomato",
+  {
+    name: "Tomato",
     quantity: "3 pieces",
+    vitamin: "C",
   },
-};
+];
 
-const vitaminInKiwi = ingredientInfoLookup["kiwi"].vitamin;
-const quantitiyOfKiwi = ingredientInfoLookup["kiwi"].quantity;
-console.log(vitaminInKiwi); //works!
-console.log(quantitiyOfKiwi); //works!
+// Function to add/remove CSS class "hidden" to sections
+function switchDisplay(toHide, toDisplay, progBarMove) {
+  toHide.classList.toggle("hidden");
+  toDisplay.classList.toggle("hidden");
+  progBarMove.checked = true;
+}
 
-const ingridientList = [
+// setting variables for all sections/frames of the webpage
+let welcomeSection = document.querySelector(".welcome-section");
+let veggieSection = document.querySelector(".veggies-section");
+let fruitSection = document.querySelector(".frame3fruits");
+let vitaminSection = document.querySelector(".frame4vitamins");
+
+// setting variables for all steps of the progress bar
+let progBar25 = document.getElementById("twentyfive");
+let progBar50 = document.getElementById("fifty");
+// Making progBar clickable will have issues with hide&display, save for later...
+// progBar50.addEventListener("click", () => progBar50.checked ? :)
+let progBar75 = document.getElementById("seventyfive");
+let progBar100 = document.getElementById("onehundred");
+
+
+// Clicking the "Lets Mix" button on the landing page moves to veggies frame
+let letsMix = document.querySelector(".lets-mix");
+letsMix.addEventListener("click", function() {
+  welcomeSection.style.display = "none";
+  veggieSection.classList.toggle("hidden");
+  progBar50.checked = true;
+}) 
+
+let finalArray = [];
+let veggieButtons = document.querySelectorAll(".veggie-btns");
+veggieButtons.forEach(function(element) {
+  element.addEventListener("click", function() {
+    element.classList.add()
+    ingredientInfoLookup.forEach(function(ingredient) {
+      if (ingredient.name === element.innerHTML) {
+        finalArray.push(ingredient);
+      }
+    })
+    // if 2 buttons are active, disable rest + hide & display & move progress bar 
+  })
+}) 
+
+
+const ingredientList = [
   "apple",
   "kiwi",
   "carrot",
@@ -46,19 +88,19 @@ const ingridientList = [
 
 console.log("The recipie is: ");
 
-ingridientList.forEach((ingridient) => {
-  const ingredientInfo = ingredientInfoLookup[ingridient];
+ingredientList.forEach((ingredient) => {
+  const ingredientInfo = ingredientInfoLookup[ingredient];
   console.log(
     `Take ${ingredientInfo.quantity} of ${ingredientInfo.prettyName} `
   );
 });
 
-//TODO Getting the elements in a new Recepie Array by check v
-//TODO To add Btn and EventListener // Start - continue - continue - Mix it -- Delay Screen shows loading page - Show the recepie
+//TODO Getting the elements in a new Recipe Array by check v
+//TODO To add Btn and EventListener // Start - continue - continue - Mix it -- Delay Screen shows loading page - Show the recipe
 
 // ANIMATED BTN
 
-var animateButton = function (e) {
+let animateButton = function (e) {
   e.preventDefault;
   //reset animation
   e.target.classList.remove("animate");
@@ -69,8 +111,8 @@ var animateButton = function (e) {
   }, 700);
 };
 
-var bubblyButtons = document.getElementsByClassName("bubbly-button");
+let bubblyButtons = document.getElementsByClassName("bubbly-button");
 
-for (var i = 0; i < bubblyButtons.length; i++) {
+for (let i = 0; i < bubblyButtons.length; i++) {
   bubblyButtons[i].addEventListener("click", animateButton, false);
 }

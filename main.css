@@ -18,25 +18,27 @@
   box-sizing: border-box;
   font-size: 10px;
 }
-/*! TOGGLING THE DISPLAY WITH THE FRAMES*/
+/* CLASS FOR TOGGLING THE DISPLAY WITH JS CODE */
+.hidden {
+  display: none;
+}  
+
+/* THE FRAMES*/
 /*WELCOME SECTION*/
 .frame1 {
-  display: none;
-  /* display: flex; */
+  
 }
 /*VEGGIE SECTION*/
-.frame2 {
-  display: none;
+.frame2veggies {
 
 }
 /* FRUIT SECTION*/
-.frame3 {
-  display: none;
+.frame3fruits {
 
 }
 
-.frame4 {
-  /* display: none; */
+.frame4vitamins {
+
 }
 
 .progress-juice-bar-container {
@@ -70,7 +72,7 @@ body {
 .welcome-section {
   /*? toggle to display with another class frame1  */
   /* display: none;  */
-  /* display: flex; */
+  display: flex;
   /*Adding the height for the First Frame!*/
   width: 70vw;
   height: 80%;
@@ -254,10 +256,9 @@ body {
 }
 
 /*! 2nd FRAME STARTS HERE*/
-.veggies-section {
+.veggies-section, .fruits-section, .vitamins-section {
   /* background-color: palevioletred; */
   background-color: #30d5c6;
-  /* display: none; */
   height: 80%;
 }
 
@@ -379,21 +380,21 @@ body {
 }
 /* ----------------HOVER PROPERTIES FOR THE VEGGIES BTNS ------using id selectors----------*/ 
 
-#carrot:hover{
+#carrot:hover, button#carrot:focus {
   background-image: url(https://media.healthyfood.com/wp-content/uploads/2019/07/The-lost-plot-growing-carrots-iStock-471680420.jpg  );
   background-repeat: repeat-x;
   background-position: center;
   background-size: 100%;
 }
 
-#celery:hover{
+#celery:hover, #celery:focus{
   background-image: url(https://static.onecms.io/wp-content/uploads/sites/44/2021/12/07/is-celery-good-for-you-heres-what-an-rd-says.jpg);
   background-repeat: repeat-x;
   background-position: center;
   background-size: 100%;
 }
 
-#beet:hover{
+#beet:hover, #beet:focus{
   background-image: url(https://www.culturesforhealth.com/learn/wp-content/uploads/2016/06/Naturally-Cultured-Beets_header-1200x900.jpg);
   background-repeat: repeat-x;
   background-position: center;
@@ -401,7 +402,7 @@ body {
   
 }
 
-#cucumber:hover{
+#cucumber:hover, #cucumber:focus{
   background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cucumber-slice-royalty-free-image-153556336-1562870568.jpg);
   background-repeat: repeat-x;
   background-position: center;

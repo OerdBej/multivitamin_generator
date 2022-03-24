@@ -28,24 +28,21 @@
 /* .frame1 {
   display: flex;
   /* display: none; */
-}
+
 /*VEGGIE SECTION*/
 /*.frame2 {
   /* display: none; */
-}
+
 /* FRUIT SECTION*/
 /*.frame3 {
   /* display: none; */
-}
 
 /*.frame4 {
   /* display: none; */
-}
 
 /* Recepie section */
 /*.frame5 {
   /* display: none; */
-} */
 
 .progress-juice-bar-container {
   /* display: none; */
@@ -703,7 +700,7 @@ body {
   text-align: center;
 }
 
-/* #ja-vitamin-extra {
+/* #js-vitamin-extra {
   position: absolute;
   bottom: 1%;
   left: 10%;
@@ -723,7 +720,7 @@ body {
   font-weight: 100;
   text-align: center;
 }
-#ja-vitamin-extra {
+#js-vitamin-extra {
   color: #ffffff;
   font-family: Tahoma;
   font-size: 5rem;

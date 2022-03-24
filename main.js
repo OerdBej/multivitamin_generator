@@ -17,34 +17,29 @@ const ingredientInfo = [
   },
   {
     name: "Pineapple",
-    quantity: "1 piece",
+    quantity: "2 cups",
     vitamin: "C",
   },
   {
     name: "Carrot",
-    quantity: "1 piece",
-    vitamin: "C",
+    quantity: "2 pieces",
+    vitamin: "A",
   },
   {
     name: "Celery",
-    quantity: "1 piece",
-    vitamin: "C",
+    quantity: "4 ribs",
+    vitamin: "K",
   },
   {
     name: "Beet",
     quantity: "1 piece",
-    vitamin: "C",
+    vitamin: "Fi",
   },
   {
     name: "Cucumber",
     quantity: "1 piece",
-    vitamin: "C",
+    vitamin: "K",
   },
-  // {
-  //   name: "Ginger",
-  //   quantity: "1 piece",
-  //   vitamin: "C",
-  // },
   // {
   //   name: "Kiwi",
   //   quantity: "3 pieces",
@@ -56,23 +51,23 @@ const ingredientInfo = [
   //   vitamin: "C",
   // },
   {
-    name: "Calcium",
-    quantity: "1 piece",
-    vitamin: "Calcium",
+    name: "Kale",
+    quantity: "1 cup",
+    vitamin: "Ca",
   },
   {
-    name: "Iron",
-    quantity: "1 piece",
-    vitamin: "Iron",
+    name: "Spinach",
+    quantity: "1 cup",
+    vitamin: "Fe",
   },
   {
-    name: "Vitamin A",
-    quantity: "1 piece",
+    name: "Pumpkin",
+    quantity: "1 quarter",
     vitamin: "A",
   },
   {
-    name: "Vitamin C",
-    quantity: "1 piece",
+    name: "Papaya",
+    quantity: "1 cup",
     vitamin: "C",
   },
 ];
@@ -88,7 +83,7 @@ function switchDisplay(toHide, toDisplay, progBarMove) {
 // Function to get the object data corresponding to the button clicked by the user
 function getIngredient(element) {
   ingredientInfo.forEach(function(ingredient) {
-    if (ingredient.name === element.innerHTML) {
+    if (ingredient.name === element.innerHTML || ingredient.vitamin === element.value) {
       finalArray.push(ingredient);
     }
   })
@@ -156,6 +151,21 @@ vitaminButtons.forEach(function(element) {
     console.log(finalArray);
     await sleep(750);
     switchDisplay(vitaminSection, recipeSection, progBar100);
+
+  let veggieItem = document.getElementById("js-veggie-item");
+  veggieItem.innerHTML = `${finalArray[0].quantity} of ${finalArray[0].name}`;
+  let fruitItem = document.getElementById("js-fruit-item");
+  fruitItem.innerHTML = `${finalArray[1].quantity} of ${finalArray[1].name}`;
+  let vitaminItem = document.getElementById("js-vitamin-item");
+  vitaminItem.innerHTML = `${finalArray[2].quantity} of ${finalArray[2].name}`;
+
+  // Filling the vitamin bubbles with the dominant vitamins from the user's selection
+  let vitaminVeggie = document.getElementById("js-vitamin-veggie");
+  vitaminVeggie.innerHTML = `${finalArray[0].vitamin}`;
+  let vitaminFruit = document.getElementById("js-vitamin-fruit");
+  vitaminFruit.innerHTML = `${finalArray[1].vitamin}`;
+  let vitaminExtra = document.getElementById("js-vitamin-extra");
+  vitaminExtra.innerHTML = `${finalArray[2].vitamin}`;
   })
 })
 

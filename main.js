@@ -39,17 +39,24 @@ function switchDisplay(toHide, toDisplay, progBarMove) {
   progBarMove.checked = true;
 }
 
+// Function to delay executing the next step, needs to be called with "async function()" and "await"
+// Source: https://stackoverflow.com/questions/951021/what-is-the-javascript-version-of-sleep
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// CALL WITH: letsMix.addEventListener("click", async function() {await sleep(1000);
+
 // setting variables for all sections/frames of the webpage
 let welcomeSection = document.querySelector(".welcome-section");
 let veggieSection = document.querySelector(".veggies-section");
-let fruitSection = document.querySelector(".frame3fruits");
-let vitaminSection = document.querySelector(".frame4vitamins");
+let fruitSection = document.querySelector(".fruits-section");
+let vitaminSection = document.querySelector(".vitamins-section");
 
 // setting variables for all steps of the progress bar
 let progBar25 = document.getElementById("twentyfive");
 let progBar50 = document.getElementById("fifty");
 // Making progBar clickable will have issues with hide&display, save for later...
-// progBar50.addEventListener("click", () => progBar50.checked ? :)
 let progBar75 = document.getElementById("seventyfive");
 let progBar100 = document.getElementById("onehundred");
 
@@ -65,16 +72,19 @@ letsMix.addEventListener("click", function() {
 let finalArray = [];
 let veggieButtons = document.querySelectorAll(".veggie-btns");
 veggieButtons.forEach(function(element) {
-  element.addEventListener("click", function() {
-    element.classList.add()
+  element.addEventListener("click", async function() {
     ingredientInfoLookup.forEach(function(ingredient) {
       if (ingredient.name === element.innerHTML) {
         finalArray.push(ingredient);
       }
     })
-    // if 2 buttons are active, disable rest + hide & display & move progress bar 
+    await sleep(500);
+    switchDisplay(veggieSection, fruitSection, progBar75);
   })
-}) 
+})
+
+let fruitButtons = document.querySelectorAll(".fruit-btns");
+fruitButtons.forEach(function(element) {})
 
 
 const ingredientList = [

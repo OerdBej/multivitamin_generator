@@ -591,6 +591,132 @@ height: 80%;
   }
 
 
+/*! CSS for FRAME Nr. 05  starts here */
+
+.juice-recipe-section {
+  width: 70vw;
+  height: 80%;
+  /* background-color: #c56584; */
+ background-color: #f3e0e6		;
+}
+
+/*? Just Parents TITLE and Text */
+.welcome-title.multi-title {
+  width: 80%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3%;
+  margin-left: 5%;
+  
+}
+
+
+/* h1 selector */
+.text-input.multi-text {
+  margin: 0;
+  color: #26AB9F;
+
+  /* background-color: #86e01e; */
+
+}
+
+/* P selectors  */
+.small-title.multi-small{
+  color: #26AB9F;
+  font-size: 3.5rem;
+  font-family: 'Dosis';
+font-weight: 700;
+  /* background-color: #f2b01e; */
+  
+}
+/* targeting the P second line*/
+#delicious {
+width: 30%;
+text-align: left;
+
+}
+
+.recipe_and_vitamins_icons_section{
+  background-color: #f5dabd;
+  width: 100%;
+  height: 50%;
+  display: flex;
+
+}
+/*? Parent*/
+.recipe-list-container {
+  width: 50%;
+  padding-top:2rem ;
+  padding-bottom:2rem ;
+  margin-left: 4%;
+  }
+#recipe-list-items {
+  /* list-style: none; option to toggle it then margin left need to be changed */
+   /* background-color: #d5c1da; */
+   color: #26AB9F;
+   font-family: 'Dosis';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 1.5rem;
+   line-height:2.5rem;
+   letter-spacing: 1px;
+}
+
+/*TODO: UL items for JS Team*/
+/* #recipe-list-items{} */
+/* LI READY for teh JS Team*/
+#js-veggie-item {}
+#js-fruit-item {}
+#js-vitamin-item {}
+
+
+/*? Parent*/
+.contain-vitamins {
+  background-color: rgb(213, 223, 223);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.contain-sub-title {
+  color: #C44C3E;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 2rem;
+  
+}
+.vitamins-contain-icon {
+  display: flex;
+  justify-content: space-around;
+  
+
+}
+.vitamins-circles {
+width: 8rem;
+}
+.vitamin-text { 
+  margin: 0;
+  color: #C44C3E;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+/*TODO: A Icons for JS Team*/
+#js-vitamin-veggie {}
+#js-vitamin-fruit {}
+#ja-vitamin-extra {}
+
+/*! CSS Frame Nr.05 finish here */
+
+
+/*! PROGRESS BAR STARTS HERE */
   /*PROGRESS BAR*/
   /*
  * Copyright (c) 2012-2013 Thibaut Courouble
@@ -692,10 +818,6 @@ height: 80%;
 }
   /* try to make the input not clickble */
 
-
-
-
-
 .label {
   display: inline-block;
   margin: 0 20px 10px;
@@ -712,65 +834,7 @@ height: 80%;
   background: rgba(0, 0, 0, 0.25);
 }
 
-
-
-/*! CSS for FRAME Nr. 05  starts here */
-
-.juice-recepie-section {
-  width: 70vw;
-  height: 80%;
-  /* background-color: #c56584; */
- background-color: #f3e0e6		;
-
-  
-}
-
-/*? Just Parents TITLE and Text */
-.welcome-title.multi-title {
-  width: 80%;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 3%;
-  margin-left: 5%;
-  
-}
-
-
-/* h1 selector */
-.text-input.multi-text {
-  margin: 0;
-  color: #26AB9F;
-
-  /* background-color: #86e01e; */
-
-}
-
-/* P selectors  */
-.small-title.multi-small{
-  color: #26AB9F;
-  font-size: 3.5rem;
-  font-family: 'Dosis';
-font-weight: 700;
-  /* background-color: #f2b01e; */
-  
-}
-/* targeting the P second line*/
-#delicious {
-width: 30%;
-text-align: left;
-
-}
-
-.recepie_and_vitamins_icons_section{
-  width: 100%;
-  height: 50%;
-  background-color: #f5dabd;
-}
-
-/*! CSS Frame Nr.05 finish here */
+/*! Media Quarry STARTS HERE  */
 
 /* SECTIONS ***********MEDIA QUARRY ************** */
 /*? when the screen is till from 0 -1380 px then change ! */

@@ -365,7 +365,7 @@ body {
   width: 50%;
   height: 10%;
   border-radius: 5px;
-  color: #ffffff;
+  color: #f1e8e8;
   font-family: Tahoma;
   font-size: 24px;
   font-weight: 100;
@@ -448,7 +448,7 @@ body {
   width: 50%;
   height: 10%;
   border-radius: 5px;
-  color: #ffffff;
+  color: #f1e8e8;
   font-family: Tahoma;
   font-size: 24px;
   font-weight: 100;
@@ -547,7 +547,7 @@ body {
   width: 50%;
   height: 10%;
   border-radius: 5px;
-  color: #ffffff;
+  color: #f1e8e8;
   font-family: Tahoma;
   font-size: 24px;
   font-weight: 100;
@@ -595,7 +595,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 3%;
-  margin-left: 4%;
+  margin-left: 6%;
   padding-top: 4%;
 }
 
@@ -636,7 +636,7 @@ body {
   width: 50%;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-left: 4%;
+  margin-left: 5%;
 }
 #recipe-list-items {
   /* list-style: none; option to toggle it then margin left need to be changed */
@@ -707,7 +707,7 @@ body {
 #ja-vitamin-extra {
   margin: 0;
   position: absolute;
-  color: #ffffff;
+  color: #f1e8e8;
   font-family: Tahoma;
   font-size: 5rem;
   font-weight: 100;

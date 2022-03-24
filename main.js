@@ -106,6 +106,7 @@ let welcomeSection = document.querySelector(".welcome-section");
 let veggieSection = document.querySelector(".veggies-section");
 let fruitSection = document.querySelector(".fruits-section");
 let vitaminSection = document.querySelector(".vitamins-section");
+let recipeSection = document.querySelector(".juice-recipe-section");
 
 // setting variables for all steps of the progress bar
 let progBar25 = document.getElementById("twentyfive");
@@ -154,7 +155,7 @@ vitaminButtons.forEach(function(element) {
     getIngredient(element);
     console.log(finalArray);
     await sleep(750);
-    // switchDisplay(vitaminSection, TODO RECIPE, progBar100);
+    switchDisplay(vitaminSection, recipeSection, progBar100);
   })
 })
 

@@ -19,33 +19,33 @@
   font-size: 10px;
 }
 /* CLASS FOR TOGGLING THE DISPLAY WITH JS CODE */
-/* .hidden {
+.hidden {
   display: none;
-}   */
+}  
 
 /* THE FRAMES*/
 /*WELCOME SECTION*/
-.frame1 {
-  /* display: flex; */
-  display: none;
+/* .frame1 {
+  display: flex;
+  /* display: none; */
 }
 /*VEGGIE SECTION*/
-.frame2 {
-  display: none;
+/*.frame2 {
+  /* display: none; */
 }
 /* FRUIT SECTION*/
-.frame3 {
-  display: none;
+/*.frame3 {
+  /* display: none; */
 }
 
-.frame4 {
-  display: none;
+/*.frame4 {
+  /* display: none; */
 }
 
 /* Recepie section */
-.frame5 {
+/*.frame5 {
   /* display: none; */
-}
+} */
 
 .progress-juice-bar-container {
   /* display: none; */
@@ -78,7 +78,7 @@ body {
 .welcome-section {
   /*? toggle to display with another class frame1  */
   /* display: none;  */
-  /* display: flex; */
+  display: flex;
   /*Adding the height for the First Frame!*/
   width: 70vw;
   height: 80%;

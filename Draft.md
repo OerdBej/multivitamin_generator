@@ -267,6 +267,27 @@ textContainer.innerHTML = `Your favorite fruit and veggie: ${finalArray}`;
 // textContainer.innerHTML = finalArray[0] displays undefined...
 // "return finalArray" in both eventListener functions does not solve the issue.
 
+// <-- !* MORAN'S CODE FOR SEARCHING AN OBJECT WITH OBJECTS -->
+
+// const ingredientList = [
+//   "apple",
+//   "kiwi",
+//   "carrot",
+//   "vitaminC",
+//   "orange",
+//   "ginger",
+// ];
+
+// console.log("The recipe is: ");
+
+// ingredientList.forEach((ingredient) => {
+//   const ingredientInfo = ingredientInfoLookup[ingredient];
+//   console.log(
+//     `Take ${ingredientInfo.quantity} of ${ingredientInfo.prettyName} `
+//   );
+// });
+
+
 \***\*\*\*\*\*\*\*** CSS IMAGES FOR THE BACKGROUND
 carrot
 https://foodandnutrition.org/wp-content/uploads/Savor-Carrots.jpg

@@ -2,42 +2,42 @@
 const ingredientInfo = [
   {
     name: "Orange",
-    quantity: "1 piece",
+    quantity: "1 Piece",
     vitamin: "vitamin C",
   },
   {
     name: "Apple",
-    quantity: "1 piece",
+    quantity: "1 Piece",
     vitamin: "vitamin C",
   },
   {
     name: "Pear",
-    quantity: "1 piece",
+    quantity: "1 Piece",
     vitamin: "vitamin C",
   },
   {
     name: "Pineapple",
-    quantity: "2 cups",
+    quantity: "2 Cups",
     vitamin: "vitamin C",
   },
   {
     name: "Carrot",
-    quantity: "2 pieces",
+    quantity: "2 Pieces",
     vitamin: "vitamin A",
   },
   {
     name: "Celery",
-    quantity: "4 ribs",
+    quantity: "4 Ribs",
     vitamin: "vitamin K",
   },
   {
     name: "Beet",
-    quantity: "1 piece",
+    quantity: "1 Piece",
     vitamin: "Iron",
   },
   {
     name: "Cucumber",
-    quantity: "1 piece",
+    quantity: "1 Piece",
     vitamin: "vitamin K",
   },
   // {
@@ -52,22 +52,22 @@ const ingredientInfo = [
   // },
   {
     name: "Kale",
-    quantity: "1 cup",
+    quantity: "1 Cup",
     vitamin: "Calcium",
   },
   {
     name: "Spinach",
-    quantity: "1 cup",
+    quantity: "1 Cup",
     vitamin: "Iron",
   },
   {
     name: "Pumpkin",
-    quantity: "1 quarter",
+    quantity: "1 Quarter",
     vitamin: "vitamin A",
   },
   {
     name: "Papaya",
-    quantity: "1 cup",
+    quantity: "1 Cup",
     vitamin: "vitamin C",
   },
 ];

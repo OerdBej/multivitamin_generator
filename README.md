@@ -2,7 +2,7 @@
 # MULTI-VITAMIN Generator
 ## Our first Project for the ultimate Vitamin Generator
 
-![vitamin](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkdpBTx1miRbu1Pr9UnuqfRZYAieNxdsqzRA&usqp=CAU)
+![vitamin](https://drive.google.com/file/d/1SG-Wk_UFA-Ag0cwNS_7zzudhIpNHLa83/view?usp=sharing)
 
 Multi-Vitamin Generator will change your life!
 

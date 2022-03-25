@@ -1,4 +1,4 @@
-// Array of objects with all info/data on our fruits, veggies & vitamins
+// !* Array of objects with all info/data on our fruits, veggies & vitamins
 const ingredientInfo = [
   {
     name: "Orange",
@@ -40,16 +40,6 @@ const ingredientInfo = [
     quantity: "1 Piece",
     vitamin: "vitamin K",
   },
-  // {
-  //   name: "Kiwi",
-  //   quantity: "3 pieces",
-  //   vitamin: "C",
-  // },
-  // {
-  //   name: "Tomato",
-  //   quantity: "3 pieces",
-  //   vitamin: "C",
-  // },
   {
     name: "Kale",
     quantity: "1 Cup",
@@ -129,7 +119,6 @@ let veggieButtons = document.querySelectorAll(".veggie-btns");
 veggieButtons.forEach(function (element) {
   element.addEventListener("click", async function () {
     getIngredient(element);
-    console.log(finalArray);
     await sleep(750);
     switchDisplay(veggieSection, fruitSection, progBar50);
   });
@@ -140,7 +129,6 @@ let fruitButtons = document.querySelectorAll(".fruit-btns");
 fruitButtons.forEach(function (element) {
   element.addEventListener("click", async function () {
     getIngredient(element);
-    console.log(finalArray);
     await sleep(750);
     switchDisplay(fruitSection, vitaminSection, progBar75);
   });
@@ -151,7 +139,6 @@ let vitaminButtons = document.querySelectorAll(".vitamin-btns");
 vitaminButtons.forEach(function (element) {
   element.addEventListener("click", async function () {
     getIngredient(element);
-    console.log(finalArray);
     await sleep(750);
     switchDisplay(vitaminSection, recipeSection, progBar100);
 
@@ -172,7 +159,7 @@ vitaminButtons.forEach(function (element) {
   });
 });
 
-// ANIMATED BTN
+// !* ANIMATED BTN
 
 let animateButton = function (e) {
   e.preventDefault;
